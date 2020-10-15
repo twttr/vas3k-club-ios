@@ -9,12 +9,12 @@
 import Foundation
 
 struct Post: Hashable, Identifiable {
-    var id: String? = nil
+    var id: Int
+    var title: String
+    var text: String = ""
     var type: String? = nil
     var slug: Int? = nil
     var author_slug: String? = nil
-    var title: String
-    var text: String
     var upvotes: Int? = nil
     var published_at: Date? = nil
     var updated_at: Date? = nil

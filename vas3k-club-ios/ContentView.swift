@@ -9,23 +9,21 @@
 import SwiftUI
 
 struct ContentView: View {
+    var request = Request.init()
     @State private var posts: [Post] = []
+    
     var body: some View {
         List(posts) { post in
             VStack(alignment: .leading) {
                 Text(post.title)
-                Text(post.text.substring(from: 0, to: 100))
-                    .font(.subheadline)
             }
-        }.onAppear(perform: loadPost)
+        }.onAppear(perform: loadPosts)
     }
     
-    func loadPost(){
-        let req = Request.init()
-        req.send(url: "https://vas3k.club/post/5631/", completion: { data in
-            let post = req.convertToPost(input: data)
-            self.posts = [post]
-        })
+    func loadPosts(){
+        request.fetchPosts { (posts) in
+            self.posts = posts
+        }
     }
 }
 
