@@ -10,12 +10,25 @@ import Foundation
 import SwiftSoup
 
 class Request {
-    let baseUrl = "https://vas3k.club"
+    let baseUrl = "https://vas3k.club/"
+    var token = ""
     
-    private func send(url: String, completion: @escaping (String) -> ()) {
-        let cookie = "token=hK2pfmKRGsiFHNkPnV6j5iDAb3f50oSD" as String
+    private func send(url: String, payload: [String: String]? = nil, completion: @escaping (String) -> ()) {
         var request = URLRequest(url: URL(string: url)!)
-        request.setValue(cookie, forHTTPHeaderField: "Cookie")
+        if !token.isEmpty {
+            request.setValue(token, forHTTPHeaderField: "Cookie")
+        }
+        if payload != nil {
+            request.httpMethod = "POST"
+            request.setValue("application/x-www-form-urlencoded", forHTTPHeaderField: "Content-Type")
+            var requestBody = URLComponents()
+            requestBody.queryItems = []
+            for (name, value) in payload! {
+                requestBody.queryItems?.append(URLQueryItem(name: name, value: value))
+            }
+            request.httpBody = requestBody.percentEncodedQuery?.data(using: .utf8)
+            request.setValue("\(String(describing: request.httpBody?.count))", forHTTPHeaderField: "Content-Length")
+        }
 
         URLSession.shared.dataTask(with: request) { data, response, error in
             if error != nil {
@@ -51,7 +64,6 @@ class Request {
                 var posts = [] as [Post]
                 let html = try! SwiftSoup.parse(response)
                 let htmlPosts = try html.select("div.feed-post-post")
-                print(htmlPosts)
                 for htmlPost in htmlPosts {
                     var postData: [String: Any] = [:]
                     let postTitle = try htmlPost.select("div.feed-post-title").first()!.select("a").first()!
@@ -62,12 +74,23 @@ class Request {
                     posts.append(post)
                 }
                 completion(posts)
-            } catch Exception.Error( _, let message) {
-                print(message)
             } catch {
                 print("error")
             }
         }
+    }
+    
+    func sendFirstLoginRequest(email: String, completion: @escaping (() -> ())){
+        send(url: baseUrl + "auth/email/", payload: ["email_or_login": email]) { _ in}
+    }
+    
+    func sendSecondLoginRequest(email: String, code: String, completion: @escaping (() -> ())){
+        send(url: baseUrl + "auth/email/code/?code=\(code)&email=\(email)/") { (response) in
+            if let cookie = HTTPCookieStorage.shared.cookies?.first(where: { $0.name == "token" }) {
+                self.token = cookie.value
+            }
+        }
+        
     }
     
 }
