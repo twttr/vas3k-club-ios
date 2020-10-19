@@ -13,7 +13,7 @@ class Request {
     let baseUrl = "https://vas3k.club/"
     var token = ""
     
-    private func send(url: String, payload: [String: String]? = nil, completion: @escaping (String) -> ()) {
+    private func send(url: String, payload: [String: String]? = nil, completion: @escaping ([String: Any]) -> ()) {
         var request = URLRequest(url: URL(string: url)!)
         if !token.isEmpty {
             request.setValue(token, forHTTPHeaderField: "Cookie")
@@ -31,11 +31,13 @@ class Request {
         }
 
         URLSession.shared.dataTask(with: request) { data, response, error in
+            var headers: [AnyHashable: Any]
             if error != nil {
                 print(error.debugDescription)
             } else {
-                if let unwrappedData = String(data: data!, encoding: .utf8) {
-                    completion(unwrappedData)
+                if let unwrappedData = String(data: data!, encoding: .utf8), let httpResponse = response as? HTTPURLResponse {
+                    headers = httpResponse.allHeaderFields
+                    completion(["payload": unwrappedData, "headers": headers])
                 }
             }
         }.resume()
@@ -62,7 +64,7 @@ class Request {
         send(url: baseUrl) { (response) in
             do {
                 var posts = [] as [Post]
-                let html = try! SwiftSoup.parse(response)
+                let html = try! SwiftSoup.parse(response["payload"] as! String)
                 let htmlPosts = try html.select("div.feed-post-post")
                 for htmlPost in htmlPosts {
                     var postData: [String: Any] = [:]
@@ -85,9 +87,11 @@ class Request {
     }
     
     func sendSecondLoginRequest(email: String, code: String, completion: @escaping (() -> ())){
-        send(url: baseUrl + "auth/email/code/?code=\(code)&email=\(email)/") { (response) in
-            if let cookie = HTTPCookieStorage.shared.cookies?.first(where: { $0.name == "token" }) {
-                self.token = cookie.value
+        send(url: baseUrl + "auth/email/code/?code=\(code)&email=\(email)") { (response) in
+            for cookie in HTTPCookieStorage.shared.cookies! {
+                if cookie.name == "token" {
+                    self.token = cookie.value
+                }
             }
         }
         
