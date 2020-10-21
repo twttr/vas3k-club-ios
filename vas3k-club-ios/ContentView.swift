@@ -9,20 +9,12 @@
 import SwiftUI
 
 struct ContentView: View {
-    var request = Request.init()
-    @State private var posts: [Post] = []
-    
+    @ObservedObject var postsViewModel = PostsViewModel()
     var body: some View {
-        List(posts) { post in
+        List(postsViewModel.postsList) { post in
             VStack(alignment: .leading) {
                 Text(post.title)
             }
-        }.onAppear(perform: loadPosts)
-    }
-    
-    func loadPosts(){
-        request.fetchPosts { (posts) in
-            self.posts = posts
         }
     }
 }
@@ -30,5 +22,19 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+    }
+}
+
+class PostsViewModel: ObservableObject {
+    var request = Request.init()
+    @Published var postsList = [Post]()
+    
+    init() {
+        request.fetchPosts { (posts) in
+            DispatchQueue.main.async { [self] in
+                postsList = posts
+                self.objectWillChange.send()
+            }
+        }
     }
 }

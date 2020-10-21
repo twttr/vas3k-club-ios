@@ -8,9 +8,9 @@
 
 import SwiftUI
 
+@available(iOS 14.0, *)
 struct LoginView: View {
     var request = Request.init()
-    @State var loggedIn: Bool = false
     @State var email: String = ""
     @State var password: String = ""
     var body: some View {
@@ -33,22 +33,18 @@ struct LoginView: View {
                     .frame(width: 220, height: 60)
                     .background(loginButtonColor)
                     .cornerRadius(15.0)
-            }.padding().sheet(isPresented: $loggedIn, content: { ContentView() })
+            }.padding().fullScreenCover(isPresented:  Binding<Bool>(
+                get: { request.loggedIn },
+                set: { request.loggedIn = $0 }
+            ), content: { ContentView() })
     }
     
     func login() {
         if password.isEmpty {
             self.request.sendFirstLoginRequest(email: self.email) {}
         } else {
-            self.request.sendSecondLoginRequest(email: self.email, code: self.password) {
-                
-                
-            }
+            self.request.sendSecondLoginRequest(email: self.email, code: self.password) {}
         }
-        if !request.token.isEmpty {
-            self.loggedIn = true
-        }
-        
     }
     
     var loginButtonText: String {
@@ -66,6 +62,7 @@ struct LoginView: View {
     }
 }
 
+@available(iOS 14.0, *)
 struct LoginView_Previews: PreviewProvider {
     static var previews: some View {
         LoginView()

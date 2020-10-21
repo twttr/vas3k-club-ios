@@ -9,9 +9,11 @@
 import UIKit
 import SwiftUI
 
+@available(iOS 14.0, *)
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
+    var defaults = UserDefaults.standard
 
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
@@ -20,12 +22,19 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
 
         // Create the SwiftUI view that provides the window contents.
-        let loginView = LoginView()
+        UserDefaults.standard.removeObject(forKey: "token")
+        let firstView = { () -> AnyView in
+            if let _ = self.defaults.object(forKey: "token") {
+                return AnyView(ContentView())
+            } else {
+                return AnyView(LoginView())
+            }
+        }
 
         // Use a UIHostingController as window root view controller.
         if let windowScene = scene as? UIWindowScene {
             let window = UIWindow(windowScene: windowScene)
-            window.rootViewController = UIHostingController(rootView: loginView)
+            window.rootViewController = UIHostingController(rootView: firstView())
             self.window = window
             window.makeKeyAndVisible()
         }

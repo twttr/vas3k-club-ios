@@ -10,13 +10,15 @@ import Foundation
 import SwiftSoup
 
 class Request {
+    let defaults = UserDefaults.standard
     let baseUrl = "https://vas3k.club/"
-    var token = ""
+    var loggedIn = false
     
     private func send(url: String, payload: [String: String]? = nil, completion: @escaping ([String: Any]) -> ()) {
         var request = URLRequest(url: URL(string: url)!)
-        if !token.isEmpty {
-            request.setValue(token, forHTTPHeaderField: "Cookie")
+        request.httpMethod = "GET"
+        if let requestToken = defaults.object(forKey: "token") as? String {
+            request.setValue("token=\(requestToken)", forHTTPHeaderField: "cookie")
         }
         if payload != nil {
             request.httpMethod = "POST"
@@ -75,6 +77,7 @@ class Request {
                     let post = Post.init(id: postData["id"] as! Int, title: postData["title"]! as! String)
                     posts.append(post)
                 }
+                print(html)
                 completion(posts)
             } catch {
                 print("error")
@@ -90,7 +93,8 @@ class Request {
         send(url: baseUrl + "auth/email/code/?code=\(code)&email=\(email)") { (response) in
             for cookie in HTTPCookieStorage.shared.cookies! {
                 if cookie.name == "token" {
-                    self.token = cookie.value
+                    self.defaults.set(cookie.value, forKey: "token")
+                    self.loggedIn = true
                 }
             }
         }

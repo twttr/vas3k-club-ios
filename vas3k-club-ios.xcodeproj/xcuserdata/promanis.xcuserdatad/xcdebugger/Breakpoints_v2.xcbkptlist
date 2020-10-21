@@ -14,8 +14,8 @@
             filePath = "vas3k-club-ios/Request.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "16"
-            endingLineNumber = "16"
+            startingLineNumber = "17"
+            endingLineNumber = "17"
             landmarkName = "send(url:payload:completion:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -30,8 +30,8 @@
             filePath = "vas3k-club-ios/Request.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "68"
-            endingLineNumber = "68"
+            startingLineNumber = "70"
+            endingLineNumber = "70"
             landmarkName = "fetchPosts(completion:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -46,13 +46,13 @@
             filePath = "vas3k-club-ios/ContentView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "16"
-            endingLineNumber = "16"
+            startingLineNumber = "14"
+            endingLineNumber = "14"
             landmarkName = "body"
             landmarkType = "24">
             <Locations>
                <Location
-                  uuid = "93ED3789-3B36-4D98-BFE7-17A046AE4520 - ce2bf6bd88e30b18"
+                  uuid = "93ED3789-3B36-4D98-BFE7-17A046AE4520 - 9d7f42d04e2d2daa"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -62,24 +62,24 @@
                   urlString = "file:///Users/promanis/Git/vas3k-club-ios/vas3k-club-ios/ContentView.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "16"
-                  endingLineNumber = "16"
-                  offsetFromSymbolStart = "123">
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "143">
                </Location>
                <Location
-                  uuid = "93ED3789-3B36-4D98-BFE7-17A046AE4520 - b01f085641eb412d"
+                  uuid = "93ED3789-3B36-4D98-BFE7-17A046AE4520 - 25f8431de56d0b10"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (vas3k_club_ios.Post) -&gt; SwiftUI.VStack&lt;SwiftUI.TupleView&lt;(SwiftUI.Text, SwiftUI.Text)&gt;&gt; in vas3k_club_ios.ContentView.body.getter : some"
+                  symbolName = "closure #1 (vas3k_club_ios.Post) -&gt; SwiftUI.VStack&lt;SwiftUI.Text&gt; in vas3k_club_ios.ContentView.body.getter : some"
                   moduleName = "vas3k-club-ios"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/promanis/Git/vas3k-club-ios/vas3k-club-ios/ContentView.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "17"
-                  endingLineNumber = "17"
-                  offsetFromSymbolStart = "44">
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "144">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -94,8 +94,8 @@
             filePath = "vas3k-club-ios/Request.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "72"
-            endingLineNumber = "72"
+            startingLineNumber = "74"
+            endingLineNumber = "74"
             landmarkName = "fetchPosts(completion:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -112,54 +112,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "BD05276D-C8F2-4D33-8D0D-C5E3BBD6C463"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "vas3k-club-ios/LoginView.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "41"
-            endingLineNumber = "41"
-            landmarkName = "login()"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "BD05276D-C8F2-4D33-8D0D-C5E3BBD6C463 - 72d1d2c93292b71c"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "vas3k_club_ios.LoginView.login() -&gt; ()"
-                  moduleName = "vas3k-club-ios"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/promanis/Git/vas3k-club-ios/vas3k-club-ios/LoginView.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "42"
-                  endingLineNumber = "42"
-                  offsetFromSymbolStart = "89">
-               </Location>
-               <Location
-                  uuid = "BD05276D-C8F2-4D33-8D0D-C5E3BBD6C463 - 8da8b5bec6bc18d0"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 () -&gt; () in vas3k_club_ios.LoginView.login() -&gt; ()"
-                  moduleName = "vas3k-club-ios"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/promanis/Git/vas3k-club-ios/vas3k-club-ios/LoginView.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "42"
-                  endingLineNumber = "42"
-                  offsetFromSymbolStart = "4">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "0E80258B-EE9D-4E3A-A3F5-D8E25EF7BF8D"
             shouldBeEnabled = "No"
             ignoreCount = "0"
@@ -167,13 +119,13 @@
             filePath = "vas3k-club-ios/Request.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "86"
-            endingLineNumber = "86"
+            startingLineNumber = "89"
+            endingLineNumber = "89"
             landmarkName = "sendFirstLoginRequest(email:completion:)"
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "0E80258B-EE9D-4E3A-A3F5-D8E25EF7BF8D - 8d92b83c0acc673b"
+                  uuid = "0E80258B-EE9D-4E3A-A3F5-D8E25EF7BF8D - 72a6c1a155bc082f"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -188,7 +140,7 @@
                   offsetFromSymbolStart = "52">
                </Location>
                <Location
-                  uuid = "0E80258B-EE9D-4E3A-A3F5-D8E25EF7BF8D - 4fac82272220708"
+                  uuid = "0E80258B-EE9D-4E3A-A3F5-D8E25EF7BF8D - fbceb1bf2d52687f"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -215,40 +167,40 @@
             filePath = "vas3k-club-ios/Request.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "33"
-            endingLineNumber = "33"
+            startingLineNumber = "35"
+            endingLineNumber = "35"
             landmarkName = "send(url:payload:completion:)"
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "A144229C-23C5-46CC-99BB-E93893FF9A09 - 71d2c86afd431de8"
+                  uuid = "A144229C-23C5-46CC-99BB-E93893FF9A09 - ba2f1acfd6ea4d98"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "vas3k_club_ios.Request.(send in _80140DF08CDA509F4AE7C7FE58482ABF)(url: Swift.String, payload: Swift.Optional&lt;Swift.Dictionary&lt;Swift.String, Swift.String&gt;&gt;, completion: (Swift.String) -&gt; ()) -&gt; ()"
+                  symbolName = "vas3k_club_ios.Request.(send in _80140DF08CDA509F4AE7C7FE58482ABF)(url: Swift.String, payload: Swift.Optional&lt;Swift.Dictionary&lt;Swift.String, Swift.String&gt;&gt;, completion: (Swift.Dictionary&lt;Swift.String, Any&gt;) -&gt; ()) -&gt; ()"
                   moduleName = "vas3k-club-ios"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/promanis/Git/vas3k-club-ios/vas3k-club-ios/Request.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "33"
-                  endingLineNumber = "33"
-                  offsetFromSymbolStart = "3428">
+                  startingLineNumber = "35"
+                  endingLineNumber = "35"
+                  offsetFromSymbolStart = "4210">
                </Location>
                <Location
-                  uuid = "A144229C-23C5-46CC-99BB-E93893FF9A09 - 7f1d49f0124447de"
+                  uuid = "A144229C-23C5-46CC-99BB-E93893FF9A09 - 9c9da03008b044a0"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in vas3k_club_ios.Request.(send in _80140DF08CDA509F4AE7C7FE58482ABF)(url: Swift.String, payload: Swift.Optional&lt;Swift.Dictionary&lt;Swift.String, Swift.String&gt;&gt;, completion: (Swift.String) -&gt; ()) -&gt; ()"
+                  symbolName = "closure #1 (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in vas3k_club_ios.Request.(send in _80140DF08CDA509F4AE7C7FE58482ABF)(url: Swift.String, payload: Swift.Optional&lt;Swift.Dictionary&lt;Swift.String, Swift.String&gt;&gt;, completion: (Swift.Dictionary&lt;Swift.String, Any&gt;) -&gt; ()) -&gt; ()"
                   moduleName = "vas3k-club-ios"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/promanis/Git/vas3k-club-ios/vas3k-club-ios/Request.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "34"
-                  endingLineNumber = "34"
-                  offsetFromSymbolStart = "178">
+                  startingLineNumber = "37"
+                  endingLineNumber = "37"
+                  offsetFromSymbolStart = "210">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -263,8 +215,8 @@
             filePath = "vas3k-club-ios/Request.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "29"
-            endingLineNumber = "29"
+            startingLineNumber = "31"
+            endingLineNumber = "31"
             landmarkName = "send(url:payload:completion:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -288,10 +240,10 @@
             filePath = "vas3k-club-ios/LoginView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "39"
-            endingLineNumber = "39"
-            landmarkName = "body"
-            landmarkType = "24">
+            startingLineNumber = "42"
+            endingLineNumber = "42"
+            landmarkName = "login()"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -304,13 +256,13 @@
             filePath = "vas3k-club-ios/Request.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "90"
-            endingLineNumber = "90"
+            startingLineNumber = "93"
+            endingLineNumber = "93"
             landmarkName = "sendSecondLoginRequest(email:code:completion:)"
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "ECEFA2B2-A2D5-4721-AFD4-72B3BF6072CA - 82077950cd929de"
+                  uuid = "ECEFA2B2-A2D5-4721-AFD4-72B3BF6072CA - f7140e0853a94646"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -325,7 +277,7 @@
                   offsetFromSymbolStart = "68">
                </Location>
                <Location
-                  uuid = "ECEFA2B2-A2D5-4721-AFD4-72B3BF6072CA - dd65f9c54445f971"
+                  uuid = "ECEFA2B2-A2D5-4721-AFD4-72B3BF6072CA - 225180581b35968a"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -352,9 +304,370 @@
             filePath = "vas3k-club-ios/Request.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "91"
-            endingLineNumber = "91"
+            startingLineNumber = "94"
+            endingLineNumber = "94"
             landmarkName = "sendSecondLoginRequest(email:code:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "41D8705D-2E2A-431B-AAF9-7BE13B7D6336"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "vas3k-club-ios/LoginView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "28"
+            endingLineNumber = "28"
+            landmarkName = "body"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "41D8705D-2E2A-431B-AAF9-7BE13B7D6336 - 726fee9a8b468ef7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of (extension in SwiftUI):SwiftUI.View.padding(SwiftUI.Edge.Set, Swift.Optional&lt;CoreGraphics.CGFloat&gt;) -&gt; some&gt;&gt;.0, &lt;&lt;opaque return type of (extension in SwiftUI):SwiftUI.View.padding(SwiftUI.Edge.Set, Swift.Optional&lt;CoreGraphics.CGFloat&gt;) -&gt; some&gt;&gt;.0, &lt;&lt;opaque return type of (extension in SwiftUI):SwiftUI.View.cornerRadius(_: CoreGraphics.CGFloat, antialiased: Swift.Bool) -&gt; some&gt;&gt;.0)&gt; in vas3k_club_ios.LoginView.body.getter : some"
+                  moduleName = "vas3k-club-ios"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/promanis/Git/vas3k-club-ios/vas3k-club-ios/LoginView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "28"
+                  endingLineNumber = "28"
+                  offsetFromSymbolStart = "3008">
+               </Location>
+               <Location
+                  uuid = "41D8705D-2E2A-431B-AAF9-7BE13B7D6336 - 577bc8104861b22d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; () in closure #1 () -&gt; SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of (extension in SwiftUI):SwiftUI.View.padding(SwiftUI.Edge.Set, Swift.Optional&lt;CoreGraphics.CGFloat&gt;) -&gt; some&gt;&gt;.0, &lt;&lt;opaque return type of (extension in SwiftUI):SwiftUI.View.padding(SwiftUI.Edge.Set, Swift.Optional&lt;CoreGraphics.CGFloat&gt;) -&gt; some&gt;&gt;.0, &lt;&lt;opaque return type of (extension in SwiftUI):SwiftUI.View.cornerRadius(_: CoreGraphics.CGFloat, antialiased: Swift.Bool) -&gt; some&gt;&gt;.0)&gt; in vas3k_club_ios.LoginView.body.getter : some"
+                  moduleName = "vas3k-club-ios"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/promanis/Git/vas3k-club-ios/vas3k-club-ios/LoginView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "28"
+                  endingLineNumber = "28"
+                  offsetFromSymbolStart = "19">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "1A329FD2-CE14-406E-84E9-BF453DD38A7A"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "vas3k-club-ios/Request.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "92"
+            endingLineNumber = "92"
+            landmarkName = "sendSecondLoginRequest(email:code:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "59AD4438-F6D7-40BD-8C8E-394FC36419A6"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "vas3k-club-ios/Request.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "66"
+            endingLineNumber = "66"
+            landmarkName = "fetchPosts(completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "59AD4438-F6D7-40BD-8C8E-394FC36419A6 - b7a9ad0ff051df2a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "vas3k_club_ios.Request.fetchPosts(completion: (Swift.Array&lt;vas3k_club_ios.Post&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "vas3k-club-ios"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/promanis/Git/vas3k-club-ios/vas3k-club-ios/Request.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "65"
+                  endingLineNumber = "65"
+                  offsetFromSymbolStart = "37">
+               </Location>
+               <Location
+                  uuid = "59AD4438-F6D7-40BD-8C8E-394FC36419A6 - efaf560cf5a7c1f0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Dictionary&lt;Swift.String, Any&gt;) -&gt; () in vas3k_club_ios.Request.fetchPosts(completion: (Swift.Array&lt;vas3k_club_ios.Post&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "vas3k-club-ios"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/promanis/Git/vas3k-club-ios/vas3k-club-ios/Request.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "67"
+                  endingLineNumber = "67"
+                  offsetFromSymbolStart = "461">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "AB8ACD51-E6DD-47F4-B430-ABAC02711DFE"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "vas3k-club-ios/Request.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "72"
+            endingLineNumber = "72"
+            landmarkName = "fetchPosts(completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "688EF0CA-FAFF-4F9F-952F-F8BA6F32CF69"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "vas3k-club-ios/Request.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "73"
+            endingLineNumber = "73"
+            landmarkName = "fetchPosts(completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6BCC1020-F89A-4F94-9966-A4255E3AE9F5"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "vas3k-club-ios/ContentView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
+            landmarkName = "PostsViewModel"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "6BCC1020-F89A-4F94-9966-A4255E3AE9F5 - 5ebc7e108a2e5cc5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "property wrapper backing initializer of vas3k_club_ios.PostsViewModel.posts : Swift.Array&lt;vas3k_club_ios.Post&gt;"
+                  moduleName = "vas3k-club-ios"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/promanis/Git/vas3k-club-ios/vas3k-club-ios/ContentView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "30"
+                  endingLineNumber = "30"
+                  offsetFromSymbolStart = "28">
+               </Location>
+               <Location
+                  uuid = "6BCC1020-F89A-4F94-9966-A4255E3AE9F5 - 76023316aa9901e1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "vas3k_club_ios.PostsViewModel.posts.getter : Swift.Array&lt;vas3k_club_ios.Post&gt;"
+                  moduleName = "vas3k-club-ios"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/promanis/Git/vas3k-club-ios/vas3k-club-ios/ContentView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "30"
+                  endingLineNumber = "30"
+                  offsetFromSymbolStart = "104">
+               </Location>
+               <Location
+                  uuid = "6BCC1020-F89A-4F94-9966-A4255E3AE9F5 - ae9309332a0c61ed"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "vas3k_club_ios.PostsViewModel.posts.setter : Swift.Array&lt;vas3k_club_ios.Post&gt;"
+                  moduleName = "vas3k-club-ios"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/promanis/Git/vas3k-club-ios/vas3k-club-ios/ContentView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "30"
+                  endingLineNumber = "30"
+                  offsetFromSymbolStart = "130">
+               </Location>
+               <Location
+                  uuid = "6BCC1020-F89A-4F94-9966-A4255E3AE9F5 - cb6ae528d17345de"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "vas3k_club_ios.PostsViewModel.posts.modify : Swift.Array&lt;vas3k_club_ios.Post&gt;"
+                  moduleName = "vas3k-club-ios"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/promanis/Git/vas3k-club-ios/vas3k-club-ios/ContentView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "52">
+               </Location>
+               <Location
+                  uuid = "6BCC1020-F89A-4F94-9966-A4255E3AE9F5 - 4ae5b6dcf765e69a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "vas3k_club_ios.PostsViewModel.posts.modify : Swift.Array&lt;vas3k_club_ios.Post&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "vas3k-club-ios"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/promanis/Git/vas3k-club-ios/vas3k-club-ios/ContentView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "30"
+                  endingLineNumber = "30"
+                  offsetFromSymbolStart = "34">
+               </Location>
+               <Location
+                  uuid = "6BCC1020-F89A-4F94-9966-A4255E3AE9F5 - 96021b1f4b1ee0fe"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "vas3k_club_ios.PostsViewModel.$posts.getter : Combine.Published&lt;Swift.Array&lt;vas3k_club_ios.Post&gt;&gt;.Publisher"
+                  moduleName = "vas3k-club-ios"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/promanis/Git/vas3k-club-ios/vas3k-club-ios/ContentView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "30"
+                  endingLineNumber = "30"
+                  offsetFromSymbolStart = "110">
+               </Location>
+               <Location
+                  uuid = "6BCC1020-F89A-4F94-9966-A4255E3AE9F5 - 350eda3a822934ea"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "vas3k_club_ios.PostsViewModel.$posts.setter : Combine.Published&lt;Swift.Array&lt;vas3k_club_ios.Post&gt;&gt;.Publisher"
+                  moduleName = "vas3k-club-ios"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/promanis/Git/vas3k-club-ios/vas3k-club-ios/ContentView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "30"
+                  endingLineNumber = "30"
+                  offsetFromSymbolStart = "233">
+               </Location>
+               <Location
+                  uuid = "6BCC1020-F89A-4F94-9966-A4255E3AE9F5 - a47dc9dd01af1e93"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "vas3k_club_ios.PostsViewModel.$posts.modify : Combine.Published&lt;Swift.Array&lt;vas3k_club_ios.Post&gt;&gt;.Publisher"
+                  moduleName = "vas3k-club-ios"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/promanis/Git/vas3k-club-ios/%3Ccompiler-generated%3E"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "53">
+               </Location>
+               <Location
+                  uuid = "6BCC1020-F89A-4F94-9966-A4255E3AE9F5 - 5b2244371ea505df"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "vas3k_club_ios.PostsViewModel.$posts.modify : Combine.Published&lt;Swift.Array&lt;vas3k_club_ios.Post&gt;&gt;.Publisher with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "vas3k-club-ios"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/promanis/Git/vas3k-club-ios/vas3k-club-ios/ContentView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "30"
+                  endingLineNumber = "30"
+                  offsetFromSymbolStart = "17">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "429E2F34-0083-4779-82C5-F2D0E27F45EC"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "vas3k-club-ios/ContentView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "16"
+            endingLineNumber = "16"
+            landmarkName = "body"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "741C831A-E351-4E7F-A3DC-92C789619389"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "vas3k-club-ios/ContentView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "33"
+            endingLineNumber = "33"
+            landmarkName = "init()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5331489E-23A7-4885-A6D4-201A0CAD92B4"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "vas3k-club-ios/Request.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "81"
+            endingLineNumber = "81"
+            landmarkName = "fetchPosts(completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "497D1C2E-C3AA-4DC7-B646-D19952E53A94"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "vas3k-club-ios/Request.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "21"
+            endingLineNumber = "21"
+            landmarkName = "send(url:payload:completion:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
