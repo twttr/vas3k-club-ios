@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9B93473C254499BF0015A086 /* ParentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B93473B254499BF0015A086 /* ParentView.swift */; };
+		9B93474125449B7C0015A086 /* ViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B93474025449B7C0015A086 /* ViewRouter.swift */; };
 		9BAED0C52537A23900EC0E9F /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BAED0C42537A23900EC0E9F /* Extensions.swift */; };
 		9BAED0C7253A05A300EC0E9F /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BAED0C6253A05A300EC0E9F /* LoginView.swift */; };
 		9BECEA3725362F8D00445E61 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BECEA3625362F8D00445E61 /* AppDelegate.swift */; };
@@ -40,6 +42,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9B93473B254499BF0015A086 /* ParentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentView.swift; sourceTree = "<group>"; };
+		9B93474025449B7C0015A086 /* ViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewRouter.swift; sourceTree = "<group>"; };
 		9BAED0C42537A23900EC0E9F /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		9BAED0C6253A05A300EC0E9F /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		9BECEA3325362F8D00445E61 /* vas3k-club-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "vas3k-club-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -120,6 +124,8 @@
 				9BECEA662536316D00445E61 /* Post.swift */,
 				9BECEA68253642BF00445E61 /* Request.swift */,
 				9BAED0C6253A05A300EC0E9F /* LoginView.swift */,
+				9B93473B254499BF0015A086 /* ParentView.swift */,
+				9B93474025449B7C0015A086 /* ViewRouter.swift */,
 			);
 			path = "vas3k-club-ios";
 			sourceTree = "<group>";
@@ -287,6 +293,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B93474125449B7C0015A086 /* ViewRouter.swift in Sources */,
+				9B93473C254499BF0015A086 /* ParentView.swift in Sources */,
 				9BECEA3725362F8D00445E61 /* AppDelegate.swift in Sources */,
 				9BAED0C7253A05A300EC0E9F /* LoginView.swift in Sources */,
 				9BAED0C52537A23900EC0E9F /* Extensions.swift in Sources */,

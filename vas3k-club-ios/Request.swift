@@ -12,7 +12,6 @@ import SwiftSoup
 class Request {
     let defaults = UserDefaults.standard
     let baseUrl = "https://vas3k.club/"
-    var loggedIn = false
     
     private func send(url: String, payload: [String: String]? = nil, completion: @escaping ([String: Any]) -> ()) {
         var request = URLRequest(url: URL(string: url)!)
@@ -77,7 +76,6 @@ class Request {
                     let post = Post.init(id: postData["id"] as! Int, title: postData["title"]! as! String)
                     posts.append(post)
                 }
-                print(html)
                 completion(posts)
             } catch {
                 print("error")
@@ -94,7 +92,7 @@ class Request {
             for cookie in HTTPCookieStorage.shared.cookies! {
                 if cookie.name == "token" {
                     self.defaults.set(cookie.value, forKey: "token")
-                    self.loggedIn = true
+                    completion()
                 }
             }
         }
