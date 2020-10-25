@@ -13,6 +13,8 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
+    - name: Force Xcode 12
+      run: sudo xcode-select -switch /Applications/Xcode_12.app
     - name: Build App
       run: xcodebuild -project "vas3k-club-ios.xcodeproj" -scheme "vas3k-club-ios" -destination "generic/platform=iOS" -configuration Release build CODE_SIGNING_ALLOWED=NO
 
