@@ -23,7 +23,9 @@ class ViewRouter: ObservableObject {
         }
         set {
             DispatchQueue.main.async {
-                self.objectWillChange.send(self)
+                withAnimation() {
+                    self.objectWillChange.send(self)
+                }
             }
         }
     }

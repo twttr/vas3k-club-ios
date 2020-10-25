@@ -9,18 +9,18 @@
 import SwiftUI
 
 struct ParentView: View {
-    @ObservedObject var viewRouter: ViewRouter
+    @EnvironmentObject var viewRouter: ViewRouter
     var body: some View {
         if viewRouter.currentPage == "LoginView" {
-            LoginView(viewRouter: viewRouter)
+            LoginView()
         } else if viewRouter.currentPage == "ContentView" {
-            ContentView(viewRouter: viewRouter)
+            ContentView().transition(.slide)
         }
     }
 }
 
 struct ParentView_Previews: PreviewProvider {
     static var previews: some View {
-        ParentView(viewRouter: ViewRouter())
+        ParentView().environmentObject(ViewRouter())
     }
 }

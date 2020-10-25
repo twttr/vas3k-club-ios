@@ -10,7 +10,7 @@ import SwiftUI
 
 struct ContentView: View {
     @ObservedObject var postsViewModel = PostsViewModel()
-    @ObservedObject var viewRouter: ViewRouter
+    @EnvironmentObject var viewRouter: ViewRouter
     var body: some View {
         List(postsViewModel.postsList) { post in
             VStack(alignment: .leading) {
@@ -22,7 +22,7 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView(viewRouter: ViewRouter())
+        ContentView().environmentObject(ViewRouter())
     }
 }
 
