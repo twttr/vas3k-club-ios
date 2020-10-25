@@ -16,7 +16,7 @@ class ViewRouter: ObservableObject {
     var currentPage: String {
         get {
             if let _ = defaults.object(forKey: "token") {
-                return "ContentView"
+                return "TabBar"
             } else {
                 return "LoginView"
             }

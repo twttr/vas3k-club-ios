@@ -13,8 +13,8 @@ struct ParentView: View {
     var body: some View {
         if viewRouter.currentPage == "LoginView" {
             LoginView()
-        } else if viewRouter.currentPage == "ContentView" {
-            ContentView().transition(.slide)
+        } else if viewRouter.currentPage == "TabBar" {
+            TabBar().transition(.slide)
         }
     }
 }

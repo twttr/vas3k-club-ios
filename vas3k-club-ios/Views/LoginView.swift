@@ -41,7 +41,7 @@ struct LoginView: View {
             self.request.sendFirstLoginRequest(email: self.email) {}
         } else {
             self.request.sendSecondLoginRequest(email: self.email, code: self.password) {
-                self.viewRouter.currentPage = "ContentView"
+                self.viewRouter.currentPage = "TabBar"
             }
         }
     }
