@@ -11,7 +11,11 @@ import SwiftUI
 struct PostView: View {
     @ObservedObject var postViewModel: PostViewModel
     var body: some View {
-        Text(postViewModel.post.text).navigationBarTitle(postViewModel.post.title)
+        ScrollView{
+            VStack{
+                Text(postViewModel.post.text).padding()
+            }.navigationBarTitle(postViewModel.post.title).lineLimit(nil)
+        }
     }
 }
 
