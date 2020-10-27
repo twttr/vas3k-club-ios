@@ -12,9 +12,13 @@ struct ContentView: View {
     @ObservedObject var postsViewModel = PostsViewModel()
     @EnvironmentObject var viewRouter: ViewRouter
     var body: some View {
-        List(postsViewModel.postsList) { post in
-            VStack(alignment: .leading) {
-                Text(post.title)
+        NavigationView {
+            List(postsViewModel.postsList) { post in
+                NavigationLink(destination: PostView(postViewModel: PostViewModel(postId: post.id))) {
+                    VStack(alignment: .leading) {
+                        Text(post.title)
+                    }
+                }
             }
         }
     }
@@ -27,11 +31,11 @@ struct ContentView_Previews: PreviewProvider {
 }
 
 class PostsViewModel: ObservableObject {
-    var request = Request.init()
+    var data = DataFetch.init()
     @Published var postsList = [Post]()
     
     init() {
-        request.fetchPosts { (posts) in
+        data.fetchPosts { (posts) in
             DispatchQueue.main.async { [self] in
                 postsList = posts
             }

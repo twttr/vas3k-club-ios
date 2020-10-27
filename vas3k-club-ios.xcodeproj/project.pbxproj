@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9B7791922547559E0068E2BA /* DataFetch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B7791912547559E0068E2BA /* DataFetch.swift */; };
+		9B77919725475BA20068E2BA /* PostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B77919625475BA20068E2BA /* PostView.swift */; };
 		9B93473C254499BF0015A086 /* ParentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B93473B254499BF0015A086 /* ParentView.swift */; };
 		9B93474125449B7C0015A086 /* ViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B93474025449B7C0015A086 /* ViewRouter.swift */; };
 		9B93475325457A930015A086 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B93475225457A930015A086 /* TabBar.swift */; };
@@ -46,6 +48,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9B7791912547559E0068E2BA /* DataFetch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataFetch.swift; sourceTree = "<group>"; };
+		9B77919625475BA20068E2BA /* PostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostView.swift; sourceTree = "<group>"; };
 		9B93473B254499BF0015A086 /* ParentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentView.swift; sourceTree = "<group>"; };
 		9B93474025449B7C0015A086 /* ViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewRouter.swift; sourceTree = "<group>"; };
 		9B93475225457A930015A086 /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
@@ -104,6 +108,7 @@
 				9BAED0C6253A05A300EC0E9F /* LoginView.swift */,
 				9B93473B254499BF0015A086 /* ParentView.swift */,
 				9BECEA3A25362F8D00445E61 /* ContentView.swift */,
+				9B77919625475BA20068E2BA /* PostView.swift */,
 				9B93475225457A930015A086 /* TabBar.swift */,
 				9B93475725457B7D0015A086 /* SearchView.swift */,
 				9B93475C25457B9D0015A086 /* UserView.swift */,
@@ -145,6 +150,7 @@
 				9BECEA3E25362F8E00445E61 /* Preview Content */,
 				9BECEA662536316D00445E61 /* Post.swift */,
 				9BECEA68253642BF00445E61 /* Request.swift */,
+				9B7791912547559E0068E2BA /* DataFetch.swift */,
 				9B93474025449B7C0015A086 /* ViewRouter.swift */,
 			);
 			path = "vas3k-club-ios";
@@ -325,6 +331,8 @@
 				9BECEA3B25362F8D00445E61 /* ContentView.swift in Sources */,
 				9BECEA672536316D00445E61 /* Post.swift in Sources */,
 				9B93475325457A930015A086 /* TabBar.swift in Sources */,
+				9B7791922547559E0068E2BA /* DataFetch.swift in Sources */,
+				9B77919725475BA20068E2BA /* PostView.swift in Sources */,
 				9B93475825457B7D0015A086 /* SearchView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

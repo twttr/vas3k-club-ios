@@ -7,14 +7,18 @@
 //
 
 import Foundation
-import SwiftSoup
 
 class Request {
     let defaults = UserDefaults.standard
-    let baseUrl = "https://vas3k.club/"
+    let baseURL: String
+    static let shared = Request(baseURL: "https://vas3k.club/")
     
-    private func send(url: String, payload: [String: String]? = nil, completion: @escaping ([String: Any]) -> ()) {
-        var request = URLRequest(url: URL(string: url)!)
+    private init(baseURL: String) {
+        self.baseURL = baseURL
+    }
+    
+    func send(url: String = "", payload: [String: String]? = nil, completion: @escaping ([String: Any]) -> ()) {
+        var request = URLRequest(url: URL(string: baseURL + url)!)
         request.httpMethod = "GET"
         if let requestToken = defaults.object(forKey: "token") as? String {
             request.setValue("token=\(requestToken)", forHTTPHeaderField: "cookie")
@@ -44,51 +48,12 @@ class Request {
         }.resume()
     }
     
-//    func fetchPost(input: String, completion: @escaping (Post) -> ()) {
-//        var postData: [String: String] = [:]
-//        send(url: input) { (response) in
-//            do {
-//                let htmlPost = try! SwiftSoup.parse(response)
-//                postData["title"] = try htmlPost.select("title").first()!.text()
-//                postData["text"] = try htmlPost.select("div.text-body").first()!.text()
-//                let post = Post.init(title: postData["title"]!, text: postData["text"]!)
-//                completion(post)
-//            } catch Exception.Error( _, let message) {
-//                print(message)
-//            } catch {
-//                print("error")
-//            }
-//        }
-//    }
-    
-    func fetchPosts(completion: @escaping ([Post]) -> ()) {
-        send(url: baseUrl) { (response) in
-            do {
-                var posts = [] as [Post]
-                let html = try! SwiftSoup.parse(response["payload"] as! String)
-                let htmlPosts = try html.select("div.feed-post-post")
-                for htmlPost in htmlPosts {
-                    var postData: [String: Any] = [:]
-                    let postTitle = try htmlPost.select("div.feed-post-title").first()!.select("a").first()!
-                    let stringId = try htmlPost.select("a.u-url").first()!.attr("href")
-                    postData["id"] = Int(stringId.components(separatedBy:CharacterSet.decimalDigits.inverted).joined())
-                    postData["title"] = try postTitle.text()
-                    let post = Post.init(id: postData["id"] as! Int, title: postData["title"]! as! String)
-                    posts.append(post)
-                }
-                completion(posts)
-            } catch {
-                print("error")
-            }
-        }
-    }
-    
     func sendFirstLoginRequest(email: String, completion: @escaping (() -> ())){
-        send(url: baseUrl + "auth/email/", payload: ["email_or_login": email]) { _ in}
+        send(url: "auth/email/", payload: ["email_or_login": email]) { _ in}
     }
     
     func sendSecondLoginRequest(email: String, code: String, completion: @escaping (() -> ())){
-        send(url: baseUrl + "auth/email/code/?code=\(code)&email=\(email)") { (response) in
+        send(url: "auth/email/code/?code=\(code)&email=\(email)") { (response) in
             for cookie in HTTPCookieStorage.shared.cookies! {
                 if cookie.name == "token" {
                     self.defaults.set(cookie.value, forKey: "token")
@@ -98,5 +63,4 @@ class Request {
         }
         
     }
-    
 }

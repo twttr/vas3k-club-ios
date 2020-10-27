@@ -10,7 +10,7 @@ import SwiftUI
 
 struct LoginView: View {
     @EnvironmentObject var viewRouter: ViewRouter
-    var request = Request.init()
+    var request = Request.shared
     @State var email: String = ""
     @State var password: String = ""
     var body: some View {

@@ -9,7 +9,7 @@
 import Foundation
 
 struct Post: Hashable, Identifiable {
-    var id: Int
+    var id: String
     var title: String
     var text: String = ""
     var type: String? = nil
