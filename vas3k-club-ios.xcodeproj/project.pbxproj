@@ -24,8 +24,6 @@
 		9BECEA3D25362F8E00445E61 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9BECEA3C25362F8E00445E61 /* Assets.xcassets */; };
 		9BECEA4025362F8E00445E61 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9BECEA3F25362F8E00445E61 /* Preview Assets.xcassets */; };
 		9BECEA4325362F8E00445E61 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BECEA4125362F8E00445E61 /* LaunchScreen.storyboard */; };
-		9BECEA4E25362F8E00445E61 /* vas3k_club_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BECEA4D25362F8E00445E61 /* vas3k_club_iosTests.swift */; };
-		9BECEA5925362F8E00445E61 /* vas3k_club_iosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BECEA5825362F8E00445E61 /* vas3k_club_iosUITests.swift */; };
 		9BECEA69253642BF00445E61 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BECEA68253642BF00445E61 /* Request.swift */; };
 		9BECEA6C2536481400445E61 /* SwiftSoup in Frameworks */ = {isa = PBXBuildFile; productRef = 9BECEA6B2536481400445E61 /* SwiftSoup */; };
 /* End PBXBuildFile section */
@@ -68,11 +66,7 @@
 		9BECEA4225362F8E00445E61 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9BECEA4425362F8E00445E61 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9BECEA4925362F8E00445E61 /* vas3k-club-iosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "vas3k-club-iosTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		9BECEA4D25362F8E00445E61 /* vas3k_club_iosTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = vas3k_club_iosTests.swift; sourceTree = "<group>"; };
-		9BECEA4F25362F8E00445E61 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9BECEA5425362F8E00445E61 /* vas3k-club-iosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "vas3k-club-iosUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		9BECEA5825362F8E00445E61 /* vas3k_club_iosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = vas3k_club_iosUITests.swift; sourceTree = "<group>"; };
-		9BECEA5A25362F8E00445E61 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9BECEA68253642BF00445E61 /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -122,8 +116,6 @@
 			children = (
 				9BB6C091254C97890088F46C /* PostsList.xcdatamodeld */,
 				9BECEA3525362F8D00445E61 /* vas3k-club-ios */,
-				9BECEA4C25362F8E00445E61 /* vas3k-club-iosTests */,
-				9BECEA5725362F8E00445E61 /* vas3k-club-iosUITests */,
 				9BECEA3425362F8D00445E61 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -162,24 +154,6 @@
 				9BECEA3F25362F8E00445E61 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		9BECEA4C25362F8E00445E61 /* vas3k-club-iosTests */ = {
-			isa = PBXGroup;
-			children = (
-				9BECEA4D25362F8E00445E61 /* vas3k_club_iosTests.swift */,
-				9BECEA4F25362F8E00445E61 /* Info.plist */,
-			);
-			path = "vas3k-club-iosTests";
-			sourceTree = "<group>";
-		};
-		9BECEA5725362F8E00445E61 /* vas3k-club-iosUITests */ = {
-			isa = PBXGroup;
-			children = (
-				9BECEA5825362F8E00445E61 /* vas3k_club_iosUITests.swift */,
-				9BECEA5A25362F8E00445E61 /* Info.plist */,
-			);
-			path = "vas3k-club-iosUITests";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -341,7 +315,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9BECEA4E25362F8E00445E61 /* vas3k_club_iosTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -349,7 +322,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9BECEA5925362F8E00445E61 /* vas3k_club_iosUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
