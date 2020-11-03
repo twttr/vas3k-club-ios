@@ -7,6 +7,7 @@
 //
 
 import SwiftUI
+import CoreData
 
 struct ContentView: View {
     @ObservedObject var postsViewModel = PostsViewModel()
@@ -16,7 +17,7 @@ struct ContentView: View {
             List(postsViewModel.postsList) { post in
                 NavigationLink(destination: PostView(postViewModel: PostViewModel(postId: post.id))) {
                     VStack(alignment: .leading) {
-                        Text(post.title)
+                        Text(post.title!)
                     }
                 }
             }
@@ -32,12 +33,14 @@ struct ContentView_Previews: PreviewProvider {
 
 class PostsViewModel: ObservableObject {
     var data = DataFetch.init()
-    @Published var postsList = [Post]()
+    let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+    @Published var postsList: [Post] = [Post]()
     
     init() {
-        data.fetchPosts { (posts) in
-            DispatchQueue.main.async { [self] in
-                postsList = posts
+        self.data.fetchPosts { (_) in
+            DispatchQueue.main.async {
+                let fetchRequest = NSFetchRequest<Post>.init(entityName: "Post")
+                self.postsList = try! self.context.fetch(fetchRequest)
             }
         }
     }

@@ -13,25 +13,26 @@ struct PostView: View {
     var body: some View {
         ScrollView{
             VStack{
-                Text(postViewModel.post.text).padding()
-            }.navigationBarTitle(postViewModel.post.title).lineLimit(nil)
+                Text(postViewModel.post.text!).padding()
+            }.navigationBarTitle(postViewModel.post.title!).lineLimit(nil)
         }
     }
 }
 
 struct PostView_Previews: PreviewProvider {
     static var previews: some View {
-        PostView(postViewModel: PostViewModel(postId: ""))
+        PostView(postViewModel: PostViewModel(postId: 1))
     }
 }
 
 class PostViewModel: ObservableObject {
     var data = DataFetch.init()
-    @Published var post: Post = Post.init(id: "", title: "")
-    init(postId: String) {
+    let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+    @Published var post: Post = Post()
+    init(postId: Int16) {
         data.fetchPost(input: postId) { (fetchedPost) in
-            DispatchQueue.main.async {
-                self.post = fetchedPost
+            DispatchQueue.main.async { [self] in
+                post = fetchedPost
             }
         }
     }

@@ -13,6 +13,7 @@ import SwiftUI
 class ViewRouter: ObservableObject {
     let objectWillChange = PassthroughSubject<ViewRouter,Never>()
     var defaults = UserDefaults.standard
+    @Environment(\.managedObjectContext) var managedObjectContext
     var currentPage: String {
         get {
             if let _ = defaults.object(forKey: "token") {
