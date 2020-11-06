@@ -15,6 +15,7 @@
 		9B93475825457B7D0015A086 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B93475725457B7D0015A086 /* SearchView.swift */; };
 		9B93475D25457B9D0015A086 /* UserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B93475C25457B9D0015A086 /* UserView.swift */; };
 		9B93476225457BBD0015A086 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B93476125457BBD0015A086 /* MenuView.swift */; };
+		9BA910CB2555D7BD0032A9D0 /* SwiftUIRefresh in Frameworks */ = {isa = PBXBuildFile; productRef = 9BA910CA2555D7BD0032A9D0 /* SwiftUIRefresh */; };
 		9BAED0C52537A23900EC0E9F /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BAED0C42537A23900EC0E9F /* Extensions.swift */; };
 		9BAED0C7253A05A300EC0E9F /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BAED0C6253A05A300EC0E9F /* LoginView.swift */; };
 		9BB6C093254C97890088F46C /* PostsList.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9BB6C091254C97890088F46C /* PostsList.xcdatamodeld */; };
@@ -75,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9BA910CB2555D7BD0032A9D0 /* SwiftUIRefresh in Frameworks */,
 				9BECEA6C2536481400445E61 /* SwiftSoup in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -174,6 +176,7 @@
 			name = "vas3k-club-ios";
 			packageProductDependencies = (
 				9BECEA6B2536481400445E61 /* SwiftSoup */,
+				9BA910CA2555D7BD0032A9D0 /* SwiftUIRefresh */,
 			);
 			productName = "vas3k-club-ios";
 			productReference = 9BECEA3325362F8D00445E61 /* vas3k-club-ios.app */;
@@ -249,6 +252,7 @@
 			mainGroup = 9BECEA2A25362F8D00445E61;
 			packageReferences = (
 				9BECEA6A2536481400445E61 /* XCRemoteSwiftPackageReference "SwiftSoup" */,
+				9BA910C92555D7BD0032A9D0 /* XCRemoteSwiftPackageReference "SwiftUIRefresh" */,
 			);
 			productRefGroup = 9BECEA3425362F8D00445E61 /* Products */;
 			projectDirPath = "";
@@ -634,6 +638,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		9BA910C92555D7BD0032A9D0 /* XCRemoteSwiftPackageReference "SwiftUIRefresh" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/timbersoftware/SwiftUIRefresh.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.0.3;
+			};
+		};
 		9BECEA6A2536481400445E61 /* XCRemoteSwiftPackageReference "SwiftSoup" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/scinfu/SwiftSoup.git";
@@ -645,6 +657,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		9BA910CA2555D7BD0032A9D0 /* SwiftUIRefresh */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9BA910C92555D7BD0032A9D0 /* XCRemoteSwiftPackageReference "SwiftUIRefresh" */;
+			productName = SwiftUIRefresh;
+		};
 		9BECEA6B2536481400445E61 /* SwiftSoup */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 9BECEA6A2536481400445E61 /* XCRemoteSwiftPackageReference "SwiftSoup" */;
