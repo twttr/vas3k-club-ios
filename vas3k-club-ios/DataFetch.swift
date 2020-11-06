@@ -56,7 +56,7 @@ class DataFetch {
         } catch Exception.Error( _, let message) {
             print(message)
         } catch {
-            print("error")
+            print(error)
         }
     }
     
@@ -84,7 +84,7 @@ class DataFetch {
             try context.save()
             completion(true)
         } catch {
-            print("error")
+            print(error)
         }
     }
 }

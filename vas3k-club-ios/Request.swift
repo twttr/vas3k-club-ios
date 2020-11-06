@@ -38,7 +38,7 @@ class Request {
         URLSession.shared.dataTask(with: request) { data, response, error in
             var headers: [AnyHashable: Any]
             if error != nil {
-                print(error.debugDescription)
+                print(error)
             } else {
                 if let unwrappedData = String(data: data!, encoding: .utf8), let httpResponse = response as? HTTPURLResponse {
                     headers = httpResponse.allHeaderFields

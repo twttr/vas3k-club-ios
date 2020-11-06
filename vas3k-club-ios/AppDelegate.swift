@@ -28,7 +28,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             do {
                 try context.save()
             } catch {
-                print("error while saving")
+                print(error)
             }
         }
     }
